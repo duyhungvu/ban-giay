@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meteor Goods</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm">
+            <a class="text-clipped navbar-brand" href="#">
+                <i class="fal fa-meteor d-flex">
+                        <span class="m-auto">1102</span>
+                      </i>
+            </a>
+            <div class="main-nav-outer d-flex">
+                <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
+                <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wonmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Kid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">New arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">sale</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav-icons-container d-flex justify-content-between">
+                <div class="nav-icons">
+                    <a class="" href="">
+                        <i class="fal fa-search text-clipped"></i>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a href="#">
+                        <i class="fal fa-shopping-bag bag-iten-count text-clipped"></i>
+                        <span class="badge">2</span>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle " data-toggle="dropdown" href="#">
+                            <i class="fal fa-user text-clipped "></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right">
+                            <form action="" class="p-2 text-secondary">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter password" required>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                    <label for="dropdwon-checkbox" class="form-check-label">remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-bg my-2">login</button>
+                            </form>
+                            <div class="dropdown-divider mt-0"></div>
+                            <a href="#" class="dropdown-item">Don't have an account? sign up</a>
+                            <a href="#" class="dropdown-item">Forgot your password? Reset now </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-icons d-lg-none">
+                    <i class="fal fa-bars open-menu-icon text-clipped"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- cart section -->
+    <section class="my-cart p-0">
+        <div class="heading-has-bg d-flex">
+            <div class="container text-left align-self-center">
+                <h1 class="text-uppercase">Cart</h1>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="cart-item-container d-md-flex justify-content-between py-3 mb-5">
+                <span class="remove-cart-item bg-danger d-flex">
+                    <i class="fal fa-time m-auto text-white"></i>
+                </span>
+                <div class="px-3 my-3 text-center text-md-left">
+                    <a href="">
+                        <div class="cart-item-img mx-auto mx-md-0 mb-3">
+                            <img src="images/shoes/cart-shoe1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart-item-product-info">
+                            <h5 class="text-uppercase">Nike Air More Uptempo 720</h5>
+                            <span><strong>Size:</strong>12.5</span>
+                            <span><strong>Color:</strong>red</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-3 my-3 text-center" > 
+                    <div class="cart-item-label text-uppercase text-secondary font-weight-bold">
+                        Quantity
+                    </div>
+                    <div class="d-inline-block">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="px-3 my-3 text-center">
+                    <h5 class="cart-item-label text-uppercase text-secondary font-weight-bold">
+                      Price
+                    </h5>
+                    <span>900$</span>
+                </div>
+                <div class="px-3 my-3 text-center ">
+                        <h5 class="cart-item-label text-uppercase text-secondary font-weight-bold">
+                               Applied coupons
+                              </h5>
+                              <span>----</span>
+                </div>
+            </div>
+<!-- cart items 2 -->
+            <div class="cart-item-container d-md-flex justify-content-between py-3 mb-5">
+                    <span class="remove-cart-item bg-danger d-flex">
+                        <i class="fal fa-time m-auto text-white"></i>
+                    </span>
+                    <div class="px-3 my-3 text-center text-md-left">
+                        <a href="">
+                            <div class="cart-item-img mx-auto mx-md-0 mb-3">
+                                <img src="images/shoes/cart-shoe2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="cart-item-product-info">
+                                <h5 class="text-uppercase">Nike Air More Uptempo 720</h5>
+                                <span><strong>Size:</strong>12.5</span>
+                                <span><strong>Color:</strong>red</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-3 my-3 text-center" > 
+                        <div class="cart-item-label text-uppercase text-secondary font-weight-bold">
+                            Quantity
+                        </div>
+                        <div class="d-inline-block">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="px-3 my-3 text-center">
+                        <h5 class="cart-item-label text-uppercase text-secondary font-weight-bold">
+                          Price
+                        </h5>
+                        <span>960$</span>
+                    </div>
+                    <div class="px-3 my-3 text-center ">
+                            <h5 class="cart-item-label text-uppercase text-secondary font-weight-bold">
+                                   Applied coupons
+                                  </h5>
+                                  <span>----</span>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    <!-- end cart -->
+
+        <!-- start footer -->
+    <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <address>
+                  <strong class="h3 font-weight-normal">123 hihi</strong><br>
+                  1123 examle street<br>
+                  phone: 0399232664<br>
+                </address>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="footer-title">
+                            <h5>
+                    Our Mission
+                  </h5>
+                            <span class="custom-border"></span>
+                        </div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="footer-title">
+                            <h5>
+                              Our Mission
+                            </h5>
+                            <span class="custom-border "></span>
+                        </div>
+                        <ul class="footer-list r ">
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">8888</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="mt-5">
+                    <div class=" w-100 d-md-flex justify-content-between align-items-center ">
+                      <div class="order-2 ">
+                        <a href="" class="footer-link">123</a>
+                        <a href="" class="footer-link ml-3">123</a>
+                        <a href="" class="footer-link ml-3">123</a>
+                      </div>
+                      <p class="m-0 text-sm order-1">
+                        &copy; 2019 123 all right reserved
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
